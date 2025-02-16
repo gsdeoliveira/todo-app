@@ -5,9 +5,9 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
-    "baseUrl": ".",
+    "baseUrl": "./src", // O baseUrl deve ser a pasta "src"
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["*"] // Isso mapeia o alias "@" para a pasta "src"
     }
   }
 }

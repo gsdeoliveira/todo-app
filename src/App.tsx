@@ -3,7 +3,7 @@ import { ThemeToggle } from "./components/theme-toggle"
 function App() {
   return (
     <div className="w-full h-screen font-josefin text-lg bg-background">
-      <div className="w-96 h-96 bg-muted">
+      <div className="w-96 h-96 bg-primary">
         <p className="text-teste">Teste todo</p>
         <p className="text-teste2">Teste todo</p>
         <p>Teste todo</p>

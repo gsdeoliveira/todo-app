@@ -11,30 +11,43 @@
 
 - Bright Blue: hsl(220, 98%, 61%)
 - Check Background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%)
+
+light
+--background: hsl(0 0% 100%);
+--primary: hsl(0, 0%, 98%);
+  --secondary: hsl(236, 33%, 92%);
+  --tertiary: hsl(233, 11%, 84%);
+  --gray-800: hsl(236, 9%, 61%);
+  --gray-900: hsl(235, 19%, 35%);
 */
 
 :root {
-  --background: hsl(0 0% 100%);
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+  --background: hsl(236, 33%, 92%);
   --primary: hsl(0, 0%, 98%);
-  --secondary: hsl(236, 33%, 92%);
-  --tertiary: hsl(233, 11%, 84%);
+  --secondary: hsl(236, 9%, 61%);
+  --tertiary: hsl(235, 19%, 35%);
   --gray-800: hsl(236, 9%, 61%);
   --gray-900: hsl(235, 19%, 35%);
 }
 
 .dark {
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
   --background: hsl(235, 21%, 11%);
   --primary: hsl(235, 24%, 19%);
   --secondary: hsl(234, 39%, 85%);
   --tertiary: hsl(236, 33%, 92%);
-  --gray-700: hsl(234, 11%, 52%);
-  --gray-800: hsl(233, 14%, 35%);
-  --gray-800: hsl(237, 14%, 26%);
+  --gray-800: hsl(234, 11%, 52%);
+  --gray-900: hsl(237, 14%, 26%);
 }
 
 @theme inline {
   --font-josefin: "Josefin Sans", sans-serif;
   --font-size: 18px;
+  --color-bright-blue: var(--bright-blue);
+  --color-check-background: var(--check-background);
   --color-background: var(--background);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
